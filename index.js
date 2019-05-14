@@ -20,7 +20,6 @@ function viewCart() {
   }
   var ans = "In your cart, you have "
   for (let i = 0; i < cart.length; i++) {
-    console.log(cart[i])
     if (i > 0) {
       ans += ", "
     }
