@@ -26,7 +26,7 @@ function viewCart() {
     if (i === cart.length - 1) {
       ans += "and "
     }
-    ans += `${cart[i].itemName} at $${cart[i].itemPrice}`
+    ans += `${getCart()[i].itemName} at $${cart[i].itemPrice}`
   }
   ans += "."
 }
