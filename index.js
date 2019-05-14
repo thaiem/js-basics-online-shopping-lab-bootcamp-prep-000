@@ -20,8 +20,15 @@ function viewCart() {
   }
   var ans = "In your cart, you have "
   for (let i = 0; i < cart.length; i++) {
-    
+    if (i > 0) {
+      ans += ", "
+    }
+    if (i === cart.length - 1) {
+      ans += "and "
+    }
+    ans += `${cart[i][itemName]} at $${cart[i][itemPrice]}`
   }
+  ans += "."
 }
 
 function total() {
