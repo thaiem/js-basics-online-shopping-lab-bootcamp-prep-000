@@ -29,6 +29,7 @@ function viewCart() {
     ans += `${getCart()[i].itemName} at $${getCart()[i].itemPrice}`
   }
   ans += "."
+  return ans;
 }
 
 function total() {
